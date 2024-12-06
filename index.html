@@ -9,24 +9,31 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
   <body>
-    <section>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">Simple header</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link">Domeenid</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Abi</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ET
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">EN</a></li>
+              <li><a class="dropdown-item" href="#">RU</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <section class="row h-100 justify-content-center align-items-center">
       <div class="container p-5">
         <h1>Hello, world!</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione iure molestiae voluptatem earum dicta? Voluptatum fugit deserunt pariatur porro accusantium quisquam, rem voluptates vel culpa optio ducimus illum voluptatem.</p>
