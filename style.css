@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-html,
-body {
+html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
   font-family: "IBM Plex Sans";
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #bdbdbd;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F010%2F820%2F720%2Foriginal%2Fwhite-background-random-minimalist-abstract-illustration-for-logo-card-banner-web-and-printing-vector.jpg&f=1&nofb=1&ipt=772446783e002a1ba984d0e70dd47b939608f3c8afec547d6d335d9750190858&ipo=images');
+  background-size: cover;
   color: black;
   text-align: center;
 }
@@ -16,7 +21,52 @@ header {
    background-color: #f8fafc;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 1140px;
+  height: 623px;
+  border-radius: 10px;
+  background-color: #F8FAFC;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  gap: 0px;
+}
+
+.logo {
+  font-size: 64px;
+}
+
+.name {
+  font-size: 48px;
+}
+
+.text {
+  font-size: 24px;
+  width: 554px;
+}
+
+.button {
+  width: 200px;
+  height: 52px;
+}
+
 @media (min-width: 1400px) {
-   .container  {
-   max-width: 99999999px;
-}}
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container  {
+    max-width: 99999999px;
+    margin: 0;
+    padding: 0;
+  }
+  .nav {
+    margin: 0;
+    padding: 0;
+  }
+}
